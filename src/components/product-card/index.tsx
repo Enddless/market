@@ -13,11 +13,11 @@ function ProductCard({ item }: TProductProps) {
   };
   return (
     <>
-      <div>
+
         <div className='product__data'>
           <div className='product__data-top'>
             <a href={item.link} target='_blank'>
-              <img src={item.img} loading='lazy' alt='photo product' />
+              <img src={item.img} loading='lazy' alt='photo product' width={221} height={238}/>
             </a>
           </div>
           <div className='product__content'>
@@ -48,7 +48,7 @@ function ProductCard({ item }: TProductProps) {
             </div>
           </div>
         </div>
-      </div>
+
       <div className='product__button'>
         <Button text='Купить' onClick={() => addBasket(item)} />
       </div>

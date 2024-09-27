@@ -1,0 +1,61 @@
+.basket {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  min-height: calc(100vh - 254px);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    align-items: start;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__lead {
+    @include fluid-text(20, 18);
+
+    color: var(--color-dark-alt);
+    margin-bottom: 13px;
+  }
+
+  &__list {
+    grid-column: span 7;
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    &__item {
+      border-radius: var(--border-radius-large);
+      box-shadow: var(--shadow);
+      background-color: var(--color-light);
+    }
+  }
+
+  &__order {
+    @include fluid-text(15, 13);
+
+    font-weight: 600;
+    grid-column: 9 / 13;
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--shadow);
+    background-color: var(--color-light);
+
+    @include mobile {
+      width: 100%;
+    }
+
+    &-price {
+      padding: 21px 21px 15px 21px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

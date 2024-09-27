@@ -1,0 +1,36 @@
+.products {
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  &__lead {
+    @include fluid-text(20, 18);
+
+    color: var(--color-gray);
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+
+    @include tablet {
+      gap: 15px;
+    }
+  }
+
+  &__item {
+    grid-column: span 4;
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--shadow);
+    background-color: var(--color-light);
+
+    @include mobile {
+      grid-column: span 6;
+    }
+
+    @include mini {
+      grid-column: span 12;
+    }
+  }
+}

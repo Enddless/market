@@ -1,0 +1,89 @@
+.product {
+  padding: 20px;
+  min-height: 407px;
+  position: relative;
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    position: relative;
+
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 54px;
+    }
+    &-icon {
+      position: absolute;
+      right: 28px;
+      top: 18px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 68px;
+    justify-content: space-between;
+
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &-title {
+      @include fluid-text(17, 15);
+
+      font-weight: 600;
+      color: var(--color-dark-alt);
+    }
+
+    &-prices {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      & .current__price {
+        @include fluid-text(17, 15);
+        color: var(--color-accent);
+        font-weight: 600;
+      }
+      & .previos__price {
+        position: absolute;
+        right: 0;
+        top: 20px;
+        @include fluid-text(13, 12);
+        text-decoration: line-through;
+        color: var(--color-accent-light);
+      }
+    }
+
+    &-order {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
+
+    &-rate {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+
+      &:hover svg * {
+        fill: var(--color-gray);
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+}

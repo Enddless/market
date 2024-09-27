@@ -1,0 +1,8 @@
+.logo {
+  @include fluid-text(25, 20);
+
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-logo);
+  font-family: var(--font-family-bold);
+}

@@ -1,0 +1,5 @@
+@import 'mixins', 'globals', 'normalize', 'media', 'variables', 'utils';
+
+@import 'blocks/logo', 'blocks/button', 'blocks/header', 'blocks/product-card',
+  'blocks/main-content', 'blocks/basket-content', 'blocks/basket-card', 'blocks/footer',
+  'blocks/footer', 'blocks/not-found', 'blocks/order-content';

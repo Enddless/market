@@ -1,0 +1,42 @@
+.header {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+  &__menu {
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+    }
+
+    &-item {
+      position: relative;
+
+      svg {
+        cursor: pointer;
+      }
+
+      &:hover svg * {
+        fill: var(--color-dark);
+      }
+
+      &--basket {
+        @include fluid-text(15, 13);
+        position: absolute;
+        top: -5px;
+        left: 12px;
+        width: 18px;
+        height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-light);
+        background-color: var(--color-accent);
+        border-radius: var(--border-radius-small);
+      }
+    }
+  }
+}

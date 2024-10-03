@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# Market
+![Market photo](/project4-1.jpg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Содержание
+- [Общая информация](#общая-информация)
+- [Структура проекта](#структура-проекта)
+- [Используемые технологии](#используемые-технологии)
+- [Контакты](#контакты)
 
-Currently, two official plugins are available:
+## Общая информация
+Небольшой проект-магазин "Market", с возможностью просмотра товаров и добавления их в корзину для дальнейшего оформления заказа
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Структура проекта
+📁 public/
+📁 src/
+├── components/
+├── mock/
+├── pages/
+├── routes/
+├── shared/
+├── store/
+├── styles/
+├── types/
+main.tsx
+.eslint.cjs
+.prettierrc
+index.html
+ 
 
-## Expanding the ESLint configuration
+## Используемые технологии
+- для управления состоянием данных и пользовательским интерфейсом в приложении использовался Redux;
+- для настройки хранилища и выполнения наиболее распространенных операций с ним использовался Redux Toolkit;
+- Prettier, Eslint – для форматирования и анализа написанного на JavaScript кода;
+- для написания чистого и валидного CSS-кода - препроцессор Scss.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Контакты
+Если у вас есть вопросы или предложения, вы можете связаться со мной:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- email: [iv_diana@bk.ru](mailto:iv_diana@bk.ru)
+- telegram: [@endless_moonlight_on_monday](https://t.me/endless_moonlight_on_monday)
